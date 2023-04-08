@@ -16,6 +16,7 @@ library(lubridate)
 library(prism)
 library(ggspatial)
 library(nngeo)
+library(stars)
 
 # this gives you an error, but it can be ignored:
 try(plyr::ldply(list.files(path="src/",
