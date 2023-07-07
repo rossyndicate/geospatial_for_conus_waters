@@ -7,4 +7,4 @@ This workflow pulls geospatial data for selected waterbody sites in CONUS and th
 3) [Omernik Ecoregion Data](https://www.epa.gov/eco-research/level-iii-and-iv-ecoregions-continental-united-states)
 4) [Aridity Index Data](https://figshare.com/articles/dataset/Global_Aridity_Index_and_Potential_Evapotranspiration_ET0_Climate_Database_v2/7504448/6)
 
-For every site, NHD comids are used as the basis for watershed delineation. Subsequently, the resolution of these watershed statistics are at the NHDPlusV2 catchment level. 
+For every site, NHD comids are used as the basis for watershed delineation. Subsequently, the resolution of these watershed statistics is at the NHDPlusV2 catchment level. 
