@@ -18,11 +18,12 @@ library(ggspatial)
 library(nngeo)
 library(stars)
 
-# this gives you an error, but it can be ignored:
-try(plyr::ldply(list.files(path="src/",
-                           pattern="*.R",
-                           full.names=TRUE),
-                source))
+#load in functions
+purrr::map(list.files(path="src/",
+                       pattern="*.R",
+                       full.names=TRUE),
+            source)
+
 # Rmarkdown options
 knitr::opts_chunk$set(echo = T, warning = F, comment = F, message = F)
 
