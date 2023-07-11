@@ -1,3 +1,7 @@
+# This function pulls chemistry data at a site's coordinates, as well as the mean value across the site's watershed.
+# The workflow was developed specifically for use by PNNL.
+# This function requires a shapefile of site locations, as well as a watershed shapefile, in CRS 4269.
+
 getChemistry <- function(df = sites, sf = site_watersheds){
   
   sf::sf_use_s2(FALSE)

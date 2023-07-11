@@ -1,3 +1,6 @@
+# This function pulls dominant Omernik ecoregion across a site's watershed. 
+# This function requires a dataframe of site location names and watershed shapefiles associated with those sites in CRS 4269. 
+
 getOmernikWs <- function(df = sites, sf = site_watersheds){
   
   call <- "https://gaftp.epa.gov/EPADataCommons/ORD/Ecoregions/us/us_eco_l3_state_boundaries.zip"

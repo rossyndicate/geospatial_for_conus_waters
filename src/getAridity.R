@@ -1,10 +1,13 @@
+# This function pulls Aridity index data at a site's coordinates, as well as the mean value across the site's watershed.
+# This function requires a shapefile of site locations, as well as a watershed shapefile, in CRS 4269.
+
 getAridity <- function(df = sites, sf = site_watersheds){
 
-# options(timeout = max(1000, getOption("timeout")))
-# call <- "https://figshare.com/ndownloader/files/34377245"
-# temp1 <- tempfile()
-# download.file(paste0(call), destfile = temp1, method = "curl")
-# unzip(temp1, exdir = "data/geo_extras")
+options(timeout = max(1000, getOption("timeout")))
+call <- "https://figshare.com/ndownloader/files/34377245"
+temp1 <- tempfile()
+download.file(paste0(call), destfile = temp1)
+unzip(temp1, exdir = "data/")
 
 sf::sf_use_s2(FALSE)
 # downloaded this data on 2.22.23

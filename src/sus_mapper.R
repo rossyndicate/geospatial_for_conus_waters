@@ -1,3 +1,7 @@
+# This function identifies all NHDPlusV2 flowline and catchment features near a site.
+# This function can be used to explore nearby NHD features, especially when a site's coordinates
+# technically place it in the wrong catchment. Requires a shapefile of site locations in CRS 4269.
+
 sus_mapper <- function(x){
   
   nearby_catchments <- vector("list",length = nrow(x))

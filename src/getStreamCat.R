@@ -1,8 +1,13 @@
+# This function pulls data from the EPA's StreamCat database, and requires a site data table that includes the sites' COMIDs.
+# Code adapted from Simon Topp's LakeCat extraction [LakeCat](https://github.com/SimonTopp/USLakeClarityTrendr/blob/master/1_nhd_join_and_munge.Rmd).
+# NOTE: This approach is  outdated. Instead, we recommend using https://github.com/USEPA/StreamCatTools.
+
 getStreamCat <- function(sites = sites,
                          epa_categories = c("AgMidHiSlopes", "CoalMines", "CanalDensity", "ImperviousSurfaces", "NLCD2016", "Dams"),
                          save = TRUE){
+
 ### StreamCat extraction (adapted from Simon Topp's code)
-# Code adapted from Simon Topps LakeCat extraction [LakeCat](https://github.com/SimonTopp/USLakeClarityTrendr/blob/master/1_nhd_join_and_munge.Rmd).
+# Code adapted from Simon Topp's LakeCat extraction [LakeCat](https://github.com/SimonTopp/USLakeClarityTrendr/blob/master/1_nhd_join_and_munge.Rmd).
 
 # StreamCat is huge (600 possible variables). And While EPA has since made a programatically interact with StreamCat, which would make this code 1 billion times faster, it wasn't public when this code was written. So! We made a function below that:
 

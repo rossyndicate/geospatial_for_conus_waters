@@ -1,3 +1,6 @@
+# This function develops watersheds by aggregating all NHDPlusV2 catchments upstream of a site's location.
+# This function requires a site data table or shapefile that includes a site name and the site's associated COMID.
+
 getWatersheds <- function(df = sites, massive = TRUE, make_pretty = TRUE){
   
   # Read in the NHD. This is a table representing all flow direction data across CONUS.

@@ -1,3 +1,6 @@
+# This function pulls dominant Omernik ecoregion at a site's coordinates. 
+# This function requires a shapefile of site locations in CRS 4269. 
+
 getOmernikSite <- function(df = sites){
   
   call <- "https://gaftp.epa.gov/EPADataCommons/ORD/Ecoregions/us/us_eco_l3_state_boundaries.zip"

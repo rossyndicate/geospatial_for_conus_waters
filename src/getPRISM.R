@@ -1,3 +1,6 @@
+# This function gets a location's 30-year normal mean, max, min temperature and mean precipitation from PRISM. 
+# This function requires a shapefile of sites in CRS 4269. PRISM data must be downloaded manually. 
+
 getPRISM <- function(df = sites){
 
 # PRISM normals downloaded on 02.22.2023

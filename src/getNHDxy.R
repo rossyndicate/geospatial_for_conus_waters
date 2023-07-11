@@ -1,3 +1,6 @@
+# This function links coordinates to their associated NHD flowline. 
+# This function requires a shapefile of sites in CRS 4269.
+
 getNHDxy <- function(df = sites){
 
   #Get the comid (i.e., hydrography identifier) for each site

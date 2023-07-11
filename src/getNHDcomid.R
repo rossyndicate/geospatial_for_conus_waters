@@ -1,3 +1,5 @@
+# This function pulls NHD flowlines based on a table of COMIDS. Output flowlines are in CRS 4269.
+
 getNHDcomid <- function(df = sites){
   
   #Select NHD flowlines that df are located on, subsequently getting NHD metadata for each sample location.
