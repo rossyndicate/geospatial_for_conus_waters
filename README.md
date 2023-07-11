@@ -25,13 +25,13 @@ Currently, this workflow requires downloading several data sets locally for much
 
 Aridity: `data/Global-AI_ET0_v3_annual/ai_v3_yr.tif`
 
-Mean precipitation: ``` data/PRISM_ppt_30yr_normal_800mM4_annual_bil/``PRISM_ppt_30yr_normal_800mM4_annual_bil.bil ```
+Mean precipitation: ``` data/PRISM_ppt_30yr_normal_800mM4_annual_bil/PRISM_ppt_30yr_normal_800mM4_annual_bil.bil ```
 
-Maximum temperature: ``` data/PRISM_tmax_30yr_normal_800mM4_annual_bil/``PRISM_tmax_30yr_normal_800mM4_annual_bil.bil ```
+Maximum temperature: ``` data/PRISM_tmax_30yr_normal_800mM4_annual_bil/PRISM_tmax_30yr_normal_800mM4_annual_bil.bil ```
 
-Minimum temperature: ``` data/PRISM_tmin_30yr_normal_800mM4_annual_bil/``PRISM_tmin_30yr_normal_800mM4_annual_bil.bil ```
+Minimum temperature: ``` data/PRISM_tmin_30yr_normal_800mM4_annual_bil/PRISM_tmin_30yr_normal_800mM4_annual_bil.bil ```
 
-Mean temperature: ``` data/PRISM_tmean_30yr_normal_800mM4_annual_bil/``PRISM_tmean_30yr_normal_800mM4_annual_bil.bil ```
+Mean temperature: ``` data/PRISM_tmean_30yr_normal_800mM4_annual_bil/PRISM_tmean_30yr_normal_800mM4_annual_bil.bil ```
 
 NHDPlusV2 catchment layer: `data/us_catchments.RDS`
 
