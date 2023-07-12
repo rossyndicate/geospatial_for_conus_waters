@@ -1,4 +1,4 @@
-# Geospatial Data Puller for Waters in the Contiguous US (CONUS).
+# Geospatial Data Puller for Waters in the Contiguous US (CONUS)
 
 This workflow pulls geospatial data for selected waterbody sites in CONUS and their watersheds. Data in this workflow comes from the following sources:
 
@@ -9,13 +9,15 @@ This workflow pulls geospatial data for selected waterbody sites in CONUS and th
 
 For every site, NHD comids are used as the basis for watershed delineation. Subsequently, the resolution of these watershed statistics is at the NHDPlusV2 catchment level.
 
-# Setting up your site data set.
+# Setting up your site data set
 
 For this code to run properly, your site data **must** be configured as follows:
 
 1)  Each site is identified with a unique site name. In the data set, this column must be called `site`.
-2)  Each site has coordinates, with column names `longitude` and `latitude`. Knowledge of coordinate projection required. **OR:** Each site has their known COMID, with column name `comid`.
-3)  Site data table is a CSV, and stored in the `data/` folder.
+2)  Each site has coordinates, with column names `longitude` and `latitude`. Knowledge of coordinate projection required.
+    <br>
+    **OR:** Each site has their known COMID, with column name `comid`.
+4)  Site data table is a CSV, and stored in the `data/` folder.
 
 I have included an example data set called `placeholder.csv` in the `data` folder.
 
@@ -35,8 +37,8 @@ Mean temperature: ``` data/PRISM_tmean_30yr_normal_800mM4_annual_bil/PRISM_tmean
 
 NHDPlusV2 catchment layer: `data/us_catchments.RDS`
 
-For the complete set of `data` to run this workflow, you can also contact Kathryn Willi at [kathryn.willi\@colostate.edu](mailto:kathryn.willi@colostate.edu){.email}.
+For the complete set of `data` to run this workflow, you can also contact Kathryn Willi at [kathryn.willi\@colostate.edu](mailto:kathryn.willi@colostate.edu).
 
-### Site data assumptions.
+### Site data assumptions
 
 This analysis is only appropriate for locations along adequately-sized streams. Some streams are too small to be captured by NHDPlusV2; it is also common for coordinates to fall in the wrong catchment (especially for big rivers). For that reason, review each site and make sure that the NHD feature attributes were appropriately captured.
