@@ -19,7 +19,7 @@ For this code to run properly, your site data **must** be configured as follows:
 2)  Each site has coordinates, with column names `longitude` and `latitude`. Knowledge of coordinate projection required.
     <br>
     **OR:** Each site has their known COMID, with column name `comid`.
-4)  Site data table is a CSV, and stored in the `data/` folder.
+4)  Site data table is a CSV, and stored in the `data` folder.
 
 I have included an example data set called `placeholder.csv` in the `data` folder.
 
