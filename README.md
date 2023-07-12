@@ -1,5 +1,7 @@
 # Geospatial Data Puller for Waters in the Contiguous US (CONUS)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8140272.svg)](https://doi.org/10.5281/zenodo.8140272)
+
 This workflow pulls geospatial data for selected waterbody sites in CONUS and their watersheds. Data in this workflow comes from the following sources:
 
 1)  [National Hydrography Dataset (NHD) Plus V2 Data](https://nhdplus.com/NHDPlus/NHDPlusV2_home.php)
